@@ -55,11 +55,11 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Convert <span className="text-molecular-highlight">Ribo</span>somal Sequences to <span className="text-molecular-highlight">PDB Files</span> and Visualize in <span className="text-molecular-highlight">3D</span>
+              From <span className="text-molecular-highlight">.rib</span> Files to <span className="text-molecular-highlight">.pdb</span> Structures — Visualized in <span className="text-molecular-highlight">3D</span>
             </h1>
 
             <p className="text-xl text-gray-200 mb-10 leading-relaxed">
-              RiboVizPDB seamlessly converts ribosomal RNA and protein sequences into PDB files, enabling 3D structural visualization through tools like PyMOL and ChimeraX.
+              Upload or generate ribosomal sequences in <code className="font-mono bg-white/10 px-1 rounded">.rib</code> format, convert them using the <strong className="text-molecular-highlight">ribosome</strong> engine, and visualize the output <code className="font-mono bg-white/10 px-1 rounded">.pdb</code> files directly in <strong>PyMOL</strong> or other 3D tools.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
@@ -98,15 +98,18 @@ export default function HeroSection() {
               <div className="relative h-96 lg:h-[500px] bg-white/10 rounded-2xl border border-molecular-highlight/30 overflow-hidden shadow-xl backdrop-blur-sm">
                 <MoleculeViewer />
 
-                {/* PDB Code overlay */}
+                {/* Pipeline flow */}
                 <div className="absolute bottom-4 left-4 right-4 bg-molecular-dark/50 rounded-lg p-3 border border-molecular-highlight/30 backdrop-blur-sm">
-                  <div className="flex items-center gap-2 text-molecular-highlight mb-1">
-                    <span className="text-sm font-mono">{"{}"}</span>
-                    <p className="text-xs font-mono">Sample PDB Conversion</p>
+                  <p className="text-molecular-highlight text-sm font-semibold mb-2">Pipeline Overview</p>
+                  <div className="flex justify-between text-xs text-gray-200 font-mono gap-2">
+                    <span className="bg-white/10 px-2 py-1 rounded">.rib</span>
+                    <span className="text-molecular-highlight">→</span>
+                    <span className="bg-white/10 px-2 py-1 rounded">ribosome</span>
+                    <span className="text-molecular-highlight">→</span>
+                    <span className="bg-white/10 px-2 py-1 rounded">.pdb</span>
+                    <span className="text-molecular-highlight">→</span>
+                    <span className="bg-white/10 px-2 py-1 rounded">PyMOL</span>
                   </div>
-                  <p className="text-gray-200 font-mono text-xs truncate">
-                    {"ATOM   1267  N   GLY A 171     -10.915  -8.012  14.365  1.00 30.12           N"}
-                  </p>
                 </div>
               </div>
             </div>
