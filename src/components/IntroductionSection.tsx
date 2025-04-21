@@ -37,13 +37,14 @@ const infoCards = [
     bgColor: "bg-molecular-dark/10",
   },
   {
-    title: "Where Can It Be Applied?",
+    title: "The concepts behind it...",
     icon: Map,
     description:
-      "Valuable in research labs, universities, biotech firms, pharmaceutical companies, and educational institutions where ribosome-related research and structural biology are conducted.",
+      "Widely used in research labs, universities, biotech firms, and pharmaceutical companies, PDB files are essential for structural biology and ribosome research. Over 200,000 structures are available, with tens of millions of downloads monthly by a global community of millions of users. The structural biology tools market leveraging this data is valued at over $8.3 billion USD and growing rapidly.",
     color: "text-molecular-highlight",
     bgColor: "bg-molecular-highlight/10",
-  },
+  }
+  ,
 ];
 
 const advantages = [
