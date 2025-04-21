@@ -37,7 +37,7 @@ const infoCards = [
     bgColor: "bg-molecular-dark/10",
   },
   {
-    title: "The concepts behind it...",
+    title: "Market Value",
     icon: Map,
     description:
       "Over 200,000 structures are available, with tens of millions of downloads monthly by a global community of millions of users. The structural biology tools market leveraging this data is valued at over $8.3 billion USD and growing rapidly.",
